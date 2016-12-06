@@ -1,0 +1,49 @@
+form#form-task.form-inline(class='todos')
+  .form
+    .main
+      input(type='text', id='content', name='content', placeholder='해야할 일이 무엇인가요?')
+    .sub
+      .form-group
+        select.form-control(name='location')
+          option(value='서울', selected) 서울
+          option(value='NY') NY
+          option(value='베이징') 베이징
+          option(value='파리') 파리
+      .form-group
+        select.form-control(name='heads')
+          option(value='1') 1인
+          option(value='2', selected) 2인
+          option(value='3') 3인 이상
+      .form-group
+        select.form-control(name='date')
+          option(value='date1') 1박
+          option(value='date2', selected) 2박 이상
+          option(value='date3') 한달 이상
+  .actions
+      button#post-task.btn.btn-primary.btn-lg.btn-block(type='button') 저장
+
+ul.tasks
+
+.no-task 
+  .alert.alert-info Task가 없습니다.
+script#task-template(type='text/template').
+  <li class='task <%= doneStr %>' data-id='<%= id %>'>
+    <span class='check'>
+      <i class='fa fa-check fa-lg'></i>
+    </span>
+    <span class='content'><%=content %></span>
+    <% if (category) { %>
+      <span class='label label-default category'> 
+        <%= category %>
+      </span>
+    <% } %>
+    <span class='priority p<%= priority %>'>
+      <%= (priority === 3) ? "중요" : ((priority === 1) ? "사소": "보통") %>
+    </span>
+    <a href='#' class='remove'><i class='fa fa-trash-o'></i></a>
+  </li>
+      
+script.
+  $(function() {
+    var todo = new TaskController();    
+  });
