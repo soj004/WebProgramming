@@ -2,11 +2,11 @@ form.todos {
   width: 100%;
   margin: 0 0 1em 0;
   padding: 1em;
-  background: #acddf2;
+  background: #fff;
   .main {
     input[type='text'] {
       font-size: 1.4em;
-      border: 1px solid #2c9cd2;
+      border: 1px solid #DF3737;
       padding: 0.5em 1em;
       margin-bottom: 1em;
       width: 100%;
@@ -15,6 +15,8 @@ form.todos {
   }
   .actions button {
     margin-top: 1em;
+    border: 1px solid #eb8383;
+    background: #eb8383;
   }
 }
 
@@ -24,7 +26,7 @@ form.todos {
   padding: 0;
   margin: 0;
   li.task {
-    border-bottom: 1px solid #eaeaea;
+    border-bottom: 1px solid #ff3333;
     padding: 1em 0;
     span {
       display: inline-block;
@@ -110,13 +112,13 @@ form.todos {
       }
 
       &.all {
-        background: #444;
+        background: #DF3737;
       }
     }
 
     a.selected {
       padding-left: 1em;
-      background-color: #009eec;
+      background-color: #DF3737;
       &:before {
         font-family: FontAwesome;
         content: "\f00c";

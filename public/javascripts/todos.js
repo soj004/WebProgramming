@@ -49,7 +49,7 @@ var TaskController = function() {
     if (!checked('priority', task.priority)) {
       return false;
     }
-    if (_.includes(['개인', '가족', '업무'], task.category)) {
+    if (_.includes(['서울', 'NY', '도쿄'], task.category)) {
       if (!checked('category', task.category)) {
         return false;
       }
@@ -85,8 +85,8 @@ var TaskController = function() {
 
   Constructor.prototype.clearForm = function() {
     $("#form-task input").val("");
-    $("#form-task select[name='category']").val("개인");
-    $("#form-task select[name='priority']").val("2");
+    $("#form-task select[name='category']").val("서울");
+    $("#form-task select[name='priority']").val("3");
     $("#form-task input:first").focus();
   };
 
