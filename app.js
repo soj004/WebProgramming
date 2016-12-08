@@ -15,7 +15,8 @@ var routes = require('./routes/index'),
     users = require('./routes/users'),
     todos = require('./routes/todos'),
     todos_guest = require('./routes/todos_guest'),
-    tasks = require('./routes/tasks');
+    tasks = require('./routes/tasks'),
+    tasks_guest = require('./routes/tasks_guest');
 
 var routeAuth = require('./routes/auth');
 
@@ -67,6 +68,7 @@ app.use('/users', users);
 app.use('/todos', todos);
 app.use('/todos_guest', todos_guest);
 app.use('/tasks', tasks);
+app.use('/tasks_guest', tasks_guest);
 routeAuth(app, passport);
 
 // catch 404 and forward to error handler
