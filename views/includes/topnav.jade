@@ -18,10 +18,11 @@
         if (currentUser) 
           li
             a(href='/users/#{currentUser._id}') 회원정보 관리
+          if (currentUser.name=='admin')
+            li
+              a(href='/users') 회원 목록   
           li
-            a(href='/users') 회원 목록
-          li
-            a(href='/signout') 로그아웃
+            a(href='/signout') 로그아웃       
         else
           li
             a(href='/signin') 로그인
