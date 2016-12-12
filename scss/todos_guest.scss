@@ -2,22 +2,16 @@ form.todos_guest {
   width: 100%;
   margin: 0 0 1em 0;
   padding: 1em;
-  background: #fff;
+  background: #f08080;
   .main {
-    input[type='text'] {
-      font-size: 1.4em;
-      border: 1px solid #DF3737;
-      padding: 0.5em 1em;
-      margin-bottom: 1em;
-      width: 100%;
-      box-sizing: border-box;
-    }
+    font-size: 1.4em;
+    border: 1px solid #DF3737;
+    padding: 0.5em 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    box-sizing: border-box;
   }
-  .actions button {
-    margin-top: 1em;
-    border: 1px solid #eb8383;
-    background: #eb8383;
-  }
+
 }
 
 .tasks {

@@ -1,21 +1,6 @@
 form#form-task.form-inline(class='todos_guest')
   .form
-    .main
-      input(type='text', id='content', name='content', placeholder='손님용')
-    .sub
-      .form-group
-        select.form-control(name='category')
-          option(value='서울', selected) 서울
-          option(value='NY') NY
-          option(value='도쿄') 도쿄
-          option(value='기타') 기타
-      .form-group
-        select.form-control(name='priority')
-          option(value='3', selected) 1인
-          option(value='2') 2인
-          option(value='1') 3인 이상
-  .actions
-      button#post-task.btn.btn-primary.btn-lg.btn-block(type='button') 등록
+    .main 숙소 리스트
       
 ul.tasks
 
@@ -34,8 +19,7 @@ script#task-template(type='text/template').
     <% } %>
     <span class='priority p<%= priority %>'>
       <%= (priority === 3) ? "1인" : ((priority === 1) ? "3인 이상": "2인") %>
-    </span>
-    <a href='#' class='remove'><i class='fa fa-trash-o'></i></a>
+    </span></i></a>
   </li>
 
 script.

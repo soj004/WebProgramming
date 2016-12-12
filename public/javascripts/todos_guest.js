@@ -78,8 +78,8 @@ var TaskController = function() {
       }
       return "";
     });
-    $("ul.tasks_guest").html(html.join("\n"));
-    $("ul.tasks_guest .check").click(self.postDone.bind(this));
+    $("ul.tasks").html(html.join("\n"));
+    $("ul.tasks .check").click(self.postDone.bind(this));
     $(".task .remove").click(self.removeTask.bind(this));
   };
 

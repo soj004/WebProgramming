@@ -207,7 +207,10 @@ form.todos_guest {
   width: 100%;
   margin: 0 0 1em 0;
   padding: 1em;
-  background: #fff; }
+  background: #f08080;
+  font-size: 1.4em;
+  margin-bottom: 1em;
+  box-sizing: border-box; }
   form.todos_guest .main input[type='text'] {
     font-size: 1.4em;
     border: 1px solid #DF3737;

@@ -12,13 +12,14 @@ function needAuth(req, res, next) {
 }
 
 router.get('/', needAuth, function(req, res, next) {
-  Task.find(function(err, tasks_guest) {
-     if (err) {
-       return res.status(500).json({message: 'internal error', desc: err});
-     }
-    res.json(tasks_guest);
-   });
-});
+  Task.find(function(err, tasks) {
+    if (err) {
+      return res.status(500).json({message: 'internal error', desc: err});
+    }
+    res.json(tasks);
+  });
+  });
+
 
 router.post('/', needAuth, function(req, res, next) {
   if (!req.body.content) {
