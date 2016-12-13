@@ -2,10 +2,12 @@ form.todos_guest {
   width: 100%;
   margin: 0 0 1em 0;
   padding: 1em;
-  background: #f08080;
+  //background: #f08080;
   .main {
+    background: #f08080;
+    color: #fff;
     font-size: 1.4em;
-    border: 1px solid #DF3737;
+    border: 1px solid #f08080;
     padding: 0.5em 1em;
     margin-bottom: 1em;
     width: 100%;

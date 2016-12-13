@@ -206,22 +206,16 @@ form.todos {
 form.todos_guest {
   width: 100%;
   margin: 0 0 1em 0;
-  padding: 1em;
-  background: #f08080;
-  font-size: 1.4em;
-  margin-bottom: 1em;
-  box-sizing: border-box; }
-  form.todos_guest .main input[type='text'] {
+  padding: 1em; }
+  form.todos_guest .main {
+    background: #f08080;
+    color: #fff;
     font-size: 1.4em;
-    border: 1px solid #DF3737;
+    border: 1px solid #f08080;
     padding: 0.5em 1em;
     margin-bottom: 1em;
     width: 100%;
     box-sizing: border-box; }
-  form.todos_guest .actions button {
-    margin-top: 1em;
-    border: 1px solid #eb8383;
-    background: #eb8383; }
 
 .tasks {
   width: 100%;
